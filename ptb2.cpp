@@ -1,3 +1,4 @@
+// giai phuong trinh bac 2 
 #include <iostream>
 #include <math.h>
 using namespace std;
