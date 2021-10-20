@@ -1,3 +1,4 @@
+// kiem tra so doi xung 
 #include<iostream>
 using namespace std;
 // bai 3 kiem tra so doi tu day so nguyen duong n 
