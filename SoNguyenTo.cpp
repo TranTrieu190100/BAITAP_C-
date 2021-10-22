@@ -25,7 +25,7 @@ void XuatBai1(int n)
 	{
 		cout << n << " la so nguyen to:";
 	}
-	else cout << n << "khong phai la si nguyen to";
+	else cout << n << "khong phai la so nguyen to";
 }
 // ham xuat so nguyen to SO N tach tung so n 
 void XuatBai2(int n)
