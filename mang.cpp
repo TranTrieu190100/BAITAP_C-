@@ -22,7 +22,7 @@ void XuatMang(int n, int a[])
 		cout << a[i] <<" ";
 	}
 }
-// xap xepv
+// xap xep
 void SapXep(int n, int a[])
 {
 	int tam;
