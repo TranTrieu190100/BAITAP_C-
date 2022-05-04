@@ -1,0 +1,109 @@
+#include <iostream>
+
+using namespace std;
+int n;
+float s = 0;
+int a[100];
+int menu;
+// //////////////////////////////////////////////////////////////////////////////////       vong Lap      //////////////////////////////////////////////////////////////////////////////////
+void TinhTong()
+{
+    cout << " nhap so tu nhien n: \n";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        s = s + float(1)/i;
+    }
+    cout << "Tong là: " <<s;
+}
+//////////////////////////////////////////////////////////////////////////////////      SWITCH       //////////////////////////////////////////////////////////////////////////////////
+void TestSwitch()
+{
+    int day;
+    cout << " nhap thang kiem tra: ";
+    cin >> day;
+    switch (day)
+    {
+    case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+        cout << " du 31 ngay. \n";
+        break;
+    case 4: case 6: case 9: case 11:
+        cout << " 30 ngay. \n";
+        break;
+    case 2:
+        cout << "28 ngay.";
+        break;
+    default :
+        cout << " khong hop le:";
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////      bang ma ASCII     //////////////////////////////////////////////////////////////////////////////////
+// kiem tra xem co phai chu in hoa in thuong hay ko 
+// a - z: 97-122;
+// A - Z: 65-90; ki tu in hoa doi sang in thuong cong them 32 
+// 0 - 9: 48 - 57
+void TestMaASCII()
+{
+    char c; 
+    cout << " nhap so de kiem tra: ";
+    cin >> c;
+    cout << (int)c;
+    if ((c >= 65) && (c <= 90))
+    {
+        cout << "==> IN HOA ";
+    }
+    else
+        cout << "==> in thuong";
+}
+// Doi ki tu in thuong thanh ki tu in hoa 
+void DoiASCII()
+{
+    char t;
+    cout << " Nhap ki tu can doi: ";
+    cin >> t;
+    if ((t <= 97) && (t >= 122))
+     t += 32; // 
+    cout << t;
+}
+
+//////////////////////////////////////////////////////////////////////////////////       MANG     //////////////////////////////////////////////////////////////////////////////////
+void NhapMang()
+{
+    cout << " nhap so luong phan tu cua mang: ";
+    cin >> n;
+    for (int i = 0; i <= n; i++)
+    {
+        cout << " phan tu thu " << i << " = ";
+        cin >> a[i];
+    }
+}
+void XuatMang()
+{
+    cout << " cac phan tu mang vua nhap la: ";
+    for (int i = 0; i <= n; i++)
+    {
+        cout << a[i] << " ";
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////      MAIN      //////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+    while (1)
+    {
+       /* cout << "\n lua chon: ";
+        cin >> menu;
+        switch (menu)
+        {
+        case 1 :
+            TestSwitch();
+            break;
+        case 2:
+            TestMaASCII();
+            break;
+        default:
+            break;
+        }*/
+   
+    }
+    system("pause");
+}
